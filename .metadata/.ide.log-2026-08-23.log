@@ -1,0 +1,278 @@
+2026-08-24 00:10:11,670 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:11,768 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:11,900 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:15,223 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:15,265 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:15,365 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-24 00:10:17,069 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 692981488 Bytes (1073741824)
+2026-08-24 00:10:19,211 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 716050160 Bytes (1073741824)
+2026-08-24 00:10:21,357 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 778438384 Bytes (1073741824)
+2026-08-24 00:10:23,452 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-24 00:10:23,452 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-24 00:10:23,452 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-24 00:10:23,453 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-24 00:10:23,453 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-24 00:10:23,495 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp_save
+2026-08-24 00:10:23,702 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp
+2026-08-24 00:10:23,758 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 00:10:23,763 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 00:10:23,860 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 00:10:23,863 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 00:10:23,941 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 00:10:23,944 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 00:10:24,013 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 00:10:24,016 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 00:10:24,120 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 00:10:24,123 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 00:10:24,188 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 00:10:24,190 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 00:10:24,244 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 00:10:24,247 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 00:10:24,300 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 00:10:24,303 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 00:10:24,343 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 00:10:24,346 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 00:10:24,385 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 00:10:24,402 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 00:10:24,408 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 00:10:24,450 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 00:10:24,453 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 00:10:24,495 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 00:10:24,499 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 00:10:24,542 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 00:10:24,545 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 00:10:24,589 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 00:10:24,592 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 00:10:24,636 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 00:10:24,639 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 00:10:24,679 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 00:10:24,682 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 00:10:24,723 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 00:10:24,727 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 00:10:24,769 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 00:10:24,772 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 00:10:24,815 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 00:10:24,819 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h_save
+2026-08-24 00:10:24,871 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h
+2026-08-24 00:10:24,875 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c_save
+2026-08-24 00:10:24,916 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c
+2026-08-24 00:10:24,923 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c_save
+2026-08-24 00:10:25,031 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c
+2026-08-24 00:10:25,036 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h_save
+2026-08-24 00:10:25,077 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h
+2026-08-24 00:10:25,085 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-24 00:10:25,146 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c
+2026-08-24 00:10:25,149 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp_save
+2026-08-24 00:10:25,218 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp
+2026-08-24 00:10:25,225 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-24 00:10:25,277 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-24 00:10:25,303 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h_save
+2026-08-24 00:10:25,374 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h
+2026-08-24 00:10:25,377 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c_save
+2026-08-24 00:10:25,450 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c
+2026-08-24 00:10:25,772 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 182mS.
+2026-08-24 00:10:25,776 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-24 00:10:25,843 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-24 00:10:26,505 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 729mS.
+2026-08-24 00:10:26,506 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 00:10:26,508 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 00:31:06,825 [INFO] WebApp:194 - Connection lost
+2026-08-24 00:31:12,480 [INFO] WebApp:191 - Connection restablished
+2026-08-24 01:02:19,640 [INFO] WebApp:194 - Connection lost
+2026-08-24 01:03:11,625 [INFO] WebApp:191 - Connection restablished
+2026-08-24 01:17:47,312 [INFO] Gpio:278 - dependency for GPIO []
+2026-08-24 01:17:51,243 [INFO] Gpio:278 - dependency for GPIO []
+2026-08-24 01:17:54,912 [INFO] Gpio:278 - dependency for GPIO []
+2026-08-24 01:25:12,108 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 717642240 Bytes (1073741824)
+2026-08-24 01:25:14,027 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 739866232 Bytes (1073741824)
+2026-08-24 01:25:21,632 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 855295456 Bytes (1073741824)
+2026-08-24 01:25:24,130 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-24 01:25:24,130 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-24 01:25:24,130 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-24 01:25:24,130 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-24 01:25:24,130 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-24 01:25:24,131 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-24 01:25:24,199 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp_save
+2026-08-24 01:25:24,414 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp
+2026-08-24 01:25:24,480 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\gpio.tmp_save
+2026-08-24 01:25:24,586 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\gpio.tmp
+2026-08-24 01:25:24,641 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 01:25:24,646 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 01:25:24,732 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 01:25:24,735 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 01:25:24,798 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 01:25:24,801 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 01:25:24,900 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 01:25:24,905 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 01:25:24,971 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 01:25:24,975 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 01:25:25,039 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 01:25:25,042 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 01:25:25,091 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 01:25:25,095 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 01:25:25,139 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 01:25:25,142 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 01:25:25,187 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 01:25:25,191 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 01:25:25,231 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 01:25:25,240 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 01:25:25,246 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 01:25:25,288 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 01:25:25,291 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 01:25:25,333 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 01:25:25,337 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 01:25:25,376 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 01:25:25,380 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 01:25:25,425 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 01:25:25,428 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 01:25:25,472 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 01:25:25,476 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 01:25:25,518 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 01:25:25,522 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 01:25:25,565 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 01:25:25,569 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 01:25:25,609 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 01:25:25,613 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 01:25:25,656 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 01:25:25,690 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h_save
+2026-08-24 01:25:25,759 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h
+2026-08-24 01:25:25,764 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c_save
+2026-08-24 01:25:25,811 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c
+2026-08-24 01:25:25,820 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c_save
+2026-08-24 01:25:25,937 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c
+2026-08-24 01:25:25,970 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h_save
+2026-08-24 01:25:26,025 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h
+2026-08-24 01:25:26,031 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-24 01:25:26,092 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c
+2026-08-24 01:25:26,095 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp_save
+2026-08-24 01:25:26,132 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp
+2026-08-24 01:25:26,139 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-24 01:25:26,185 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-24 01:25:26,215 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h_save
+2026-08-24 01:25:26,274 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h
+2026-08-24 01:25:26,279 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c_save
+2026-08-24 01:25:26,353 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c
+2026-08-24 01:25:26,726 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 224mS.
+2026-08-24 01:25:26,729 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-24 01:25:26,782 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-24 01:25:27,587 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 858mS.
+2026-08-24 01:25:27,588 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 01:25:27,589 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 02:01:35,764 [INFO] Gpio:278 - dependency for GPIO []
+2026-08-24 02:05:16,038 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 764155328 Bytes (1073741824)
+2026-08-24 02:05:17,729 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 785555656 Bytes (1073741824)
+2026-08-24 02:05:19,132 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 847990392 Bytes (1073741824)
+2026-08-24 02:05:21,718 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-24 02:05:21,718 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-24 02:05:21,718 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-24 02:05:21,719 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-24 02:05:21,719 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-24 02:05:21,719 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-24 02:05:21,768 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp_save
+2026-08-24 02:05:21,959 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\license.tmp
+2026-08-24 02:05:21,979 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\gpio.tmp_save
+2026-08-24 02:05:22,087 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\gpio.tmp
+2026-08-24 02:05:22,140 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 02:05:22,144 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 02:05:22,211 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 02:05:22,215 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 02:05:22,284 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 02:05:22,287 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 02:05:22,352 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 02:05:22,355 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 02:05:22,415 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 02:05:22,417 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 02:05:22,475 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 02:05:22,479 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 02:05:22,524 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 02:05:22,527 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 02:05:22,571 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 02:05:22,575 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 02:05:22,613 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 02:05:22,616 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 02:05:22,654 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 02:05:22,661 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-24 02:05:22,666 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-24 02:05:22,705 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_inc.tmp
+2026-08-24 02:05:22,708 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-24 02:05:22,743 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-24 02:05:22,747 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-24 02:05:22,785 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-24 02:05:22,788 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-24 02:05:22,828 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_typedefs.tmp
+2026-08-24 02:05:22,833 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-24 02:05:22,872 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_vars.tmp
+2026-08-24 02:05:22,876 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-24 02:05:22,914 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_pfp.tmp
+2026-08-24 02:05:22,918 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-24 02:05:22,958 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-24 02:05:22,961 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-24 02:05:23,003 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-24 02:05:23,007 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-24 02:05:23,047 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\rtos_threads.tmp
+2026-08-24 02:05:23,051 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h_save
+2026-08-24 02:05:23,109 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\FreeRTOSConfig.h
+2026-08-24 02:05:23,112 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c_save
+2026-08-24 02:05:23,154 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\freertos.c
+2026-08-24 02:05:23,161 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c_save
+2026-08-24 02:05:23,284 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_it.c
+2026-08-24 02:05:23,291 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h_save
+2026-08-24 02:05:23,349 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_it.h
+2026-08-24 02:05:23,364 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-24 02:05:23,439 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_msp.c
+2026-08-24 02:05:23,443 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp_save
+2026-08-24 02:05:23,490 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\MXTmpFiles\system.tmp
+2026-08-24 02:05:23,506 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2026-08-24 02:05:23,553 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\stm32f4xx_hal_timebase_tim.c
+2026-08-24 02:05:23,562 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-24 02:05:23,610 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-24 02:05:23,640 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h_save
+2026-08-24 02:05:23,712 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Inc\main.h
+2026-08-24 02:05:23,716 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c_save
+2026-08-24 02:05:23,787 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\002LED_TASKS\Core\Src\main.c
+2026-08-24 02:05:23,997 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 118mS.
+2026-08-24 02:05:24,000 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-24 02:05:24,043 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-24 02:05:24,703 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 703mS.
+2026-08-24 02:05:24,703 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 02:05:24,706 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-24 13:33:01,355 [INFO] WebApp:194 - Connection lost
+2026-08-24 13:33:01,526 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:00:09,413 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:00:30,764 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:15:04,024 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:15:04,347 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:15:07,362 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:15:07,704 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:22:19,211 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:22:24,728 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:57:27,320 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:57:27,759 [INFO] WebApp:191 - Connection restablished
+2026-08-24 14:57:30,877 [INFO] WebApp:194 - Connection lost
+2026-08-24 14:57:31,146 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:03:31,976 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:03:32,416 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:03:55,397 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:03:55,709 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:04:00,458 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:04:00,784 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:04:07,885 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:04:08,186 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:57:26,565 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:57:26,995 [INFO] WebApp:191 - Connection restablished
+2026-08-24 15:57:32,933 [INFO] WebApp:194 - Connection lost
+2026-08-24 15:57:33,114 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:36:17,063 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:36:19,004 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:36:20,109 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:36:52,197 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:38:54,710 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:39:17,775 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:39:17,837 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:39:18,219 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:39:18,856 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:39:19,265 [INFO] WebApp:191 - Connection restablished
+2026-08-24 19:39:20,421 [INFO] WebApp:194 - Connection lost
+2026-08-24 19:39:20,717 [INFO] WebApp:191 - Connection restablished
+2026-08-24 22:12:33,614 [INFO] WebApp:194 - Connection lost
+2026-08-24 22:13:07,814 [INFO] WebApp:191 - Connection restablished

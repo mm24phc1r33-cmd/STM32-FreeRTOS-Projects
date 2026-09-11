@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;001Task/Middlewares/Third_Party/SEGGER/SEGGER&apos; to &apos;segger&apos;" description="Rename resource &apos;SEGGER&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Middlewares/Third_Party/SEGGER/SEGGER" name="segger" stamp="1786976892494" updateReferences="true"/>
+</session>

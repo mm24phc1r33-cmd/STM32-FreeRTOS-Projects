@@ -1,0 +1,269 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Thread-safe counting semaphore & ISR logging demo
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "cmsis_os.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+#include "stream_buffer.h"
+#include "SEGGER_SYSVIEW.h"
+//#include "usart.h"   /* declares extern UART_HandleTypeDef huart2 */
+/* USER CODE END Includes */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+#define MAX_EVENT_COUNT         10
+#define INITIAL_EVENT_COUNT      0
+
+#define LOGGER_TASK_PRIORITY     0   /* Lowest priority - handles deferred output */
+#define HANDLER_TASK_PRIORITY    1
+#define PERIODIC_TASK_PRIORITY   3   /* Highest priority */
+
+#define LOG_STREAM_BUFFER_SIZE   512
+/* USER CODE END PD */
+
+/* Private variables ---------------------------------------------------------*/
+/* USER CODE BEGIN PV */
+TaskHandle_t xHandlerTaskHandle  = NULL;
+TaskHandle_t xPeriodicTaskHandle = NULL;
+TaskHandle_t xLoggerTaskHandle   = NULL;
+
+SemaphoreHandle_t    xCountingSemaphore;
+StreamBufferHandle_t xLogStreamBuffer;
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+
+/* USER CODE BEGIN PFP */
+void printmsg(const char *msg);
+void printmsgFromISR(const char *msg);
+
+static void Handler_task(void *pvParameters);
+static void Periodic_task(void *pvParameters);
+static void Logger_task(void *pvParameters);
+
+static void prvSetupSoftwareInterrupt(void);
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/**
+ * @brief Thread-safe logging function for tasks.
+ */
+void printmsg(const char *msg)
+{
+    if (xLogStreamBuffer != NULL)
+    {
+        xStreamBufferSend(xLogStreamBuffer, msg, strlen(msg), portMAX_DELAY);
+    }
+}
+
+/**
+ * @brief Lock-free, non-blocking logging function for ISRs.
+ */
+void printmsgFromISR(const char *msg)
+{
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    if (xLogStreamBuffer != NULL)
+    {
+        /* Send to stream buffer without blocking */
+        xStreamBufferSendFromISR(xLogStreamBuffer, msg, strlen(msg), &xHigherPriorityTaskWoken);
+        portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+    }
+}
+
+static void prvSetupSoftwareInterrupt(void)
+{
+    NVIC_SetPriority(EXTI15_10_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY);
+    NVIC_EnableIRQ(EXTI15_10_IRQn);
+}
+/* USER CODE END 0 */
+
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+
+  /* USER CODE BEGIN 2 */
+    CoreDebug->DEMCR |= (1 << 24);
+    DWT->CYCCNT = 0;
+    DWT->CTRL |= (1 << 0);
+
+    SEGGER_SYSVIEW_Conf();
+    SEGGER_SYSVIEW_Start();
+
+    /* Create non-blocking Stream Buffer for thread-safe UART logging */
+    xLogStreamBuffer = xStreamBufferCreate(LOG_STREAM_BUFFER_SIZE, 1);
+
+    /* Create counting semaphore */
+    xCountingSemaphore = xSemaphoreCreateCounting(MAX_EVENT_COUNT, INITIAL_EVENT_COUNT);
+
+    if ((xCountingSemaphore != NULL) && (xLogStreamBuffer != NULL))
+    {
+        prvSetupSoftwareInterrupt();
+
+        /* Create Logger Task (Priority 0) */
+        xTaskCreate(Logger_task, "Logger", 256, NULL,
+                    LOGGER_TASK_PRIORITY, &xLoggerTaskHandle);
+
+        /* Create Handler Task (Priority 1) */
+        xTaskCreate(Handler_task, "Handler", 256, NULL,
+                    HANDLER_TASK_PRIORITY, &xHandlerTaskHandle);
+
+        /* Create Periodic Task (Priority 3) */
+        xTaskCreate(Periodic_task, "Periodic", 256, NULL,
+                    PERIODIC_TASK_PRIORITY, &xPeriodicTaskHandle);
+
+        printmsg("Demo of counting semaphore with thread-safe logging\r\n");
+
+        /* Start native FreeRTOS scheduler */
+        vTaskStartScheduler();
+    }
+
+    /* Fallback if memory allocation fails */
+    for (;;);
+  /* USER CODE END 2 */
+}
+
+/* USER CODE BEGIN 4 */
+
+/* ---------------- Logger Task ---------------- */
+static void Logger_task(void *pvParameters)
+{
+    char rx_buf[64];
+    size_t xReceivedBytes;
+
+    for (;;)
+    {
+        /* Wait for log data sent from tasks or ISR */
+        xReceivedBytes = xStreamBufferReceive(xLogStreamBuffer,
+                                             rx_buf,
+                                             sizeof(rx_buf) - 1,
+                                             portMAX_DELAY);
+        if (xReceivedBytes > 0)
+        {
+            rx_buf[xReceivedBytes] = '\0';
+            HAL_UART_Transmit(&huart2, (uint8_t*)rx_buf, xReceivedBytes, HAL_MAX_DELAY);
+        }
+    }
+}
+
+/* ---------------- Handler task ---------------- */
+static void Handler_task(void *pvParameters)
+{
+    char msg[64];
+
+    for (;;)
+    {
+        /* Wait for semaphore event */
+        xSemaphoreTake(xCountingSemaphore, portMAX_DELAY);
+
+        /* Safe stack-allocated string buffer */
+        snprintf(msg, sizeof(msg), "Handler task - Processing event.\r\n");
+        printmsg(msg);
+    }
+}
+
+/* ---------------- Periodic task ---------------- */
+static void Periodic_task(void *pvParameters)
+{
+    char msg[64];
+
+    for (;;)
+    {
+        vTaskDelay(pdMS_TO_TICKS(500));
+
+        snprintf(msg, sizeof(msg), "Periodic task - Pending the interrupt.\r\n");
+        printmsg(msg);
+
+        /* Pend the software interrupt */
+        NVIC_SetPendingIRQ(EXTI15_10_IRQn);
+
+        snprintf(msg, sizeof(msg), "Periodic task - Resuming.\r\n");
+        printmsg(msg);
+    }
+}
+
+/* ---------------- ISR Handler ---------------- */
+void EXTI15_10_IRQHandler(void)
+{
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+
+    /* Lock-free ISR logging */
+    printmsgFromISR("==>Button_Handler\r\n");
+
+    /* Increment counting semaphore */
+    xSemaphoreGiveFromISR(xCountingSemaphore, &xHigherPriorityTaskWoken);
+    xSemaphoreGiveFromISR(xCountingSemaphore, &xHigherPriorityTaskWoken);
+    xSemaphoreGiveFromISR(xCountingSemaphore, &xHigherPriorityTaskWoken);
+    xSemaphoreGiveFromISR(xCountingSemaphore, &xHigherPriorityTaskWoken);
+    xSemaphoreGiveFromISR(xCountingSemaphore, &xHigherPriorityTaskWoken);
+
+    NVIC_ClearPendingIRQ(EXTI15_10_IRQn);
+
+    /* Context switch request if a higher-priority task was unblocked */
+    portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+}
+
+/* USER CODE END 4 */
+
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+static void MX_GPIO_Init(void)
+{
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+}
+
+void Error_Handler(void)
+{
+  __disable_irq();
+  while (1) {}
+}

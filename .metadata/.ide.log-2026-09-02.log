@@ -1,0 +1,172 @@
+2026-09-02 00:03:15,195 [INFO] WebApp:194 - Connection lost
+2026-09-02 00:03:15,507 [INFO] WebApp:191 - Connection restablished
+2026-09-02 00:03:39,675 [INFO] WebApp:194 - Connection lost
+2026-09-02 00:03:39,876 [INFO] WebApp:191 - Connection restablished
+2026-09-02 00:11:40,404 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 957977104 Bytes (1073741824)
+2026-09-02 00:11:42,508 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 978519920 Bytes (1073741824)
+2026-09-02 00:11:44,055 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 775137224 Bytes (1073741824)
+2026-09-02 00:11:45,857 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-09-02 00:11:45,857 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-09-02 00:11:45,857 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-09-02 00:11:45,857 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-09-02 00:11:45,858 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-09-02 00:11:45,858 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-09-02 00:11:45,858 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-09-02 00:11:45,916 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\license.tmp_save
+2026-09-02 00:11:45,972 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\license.tmp
+2026-09-02 00:11:45,983 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\gpio.tmp_save
+2026-09-02 00:11:46,026 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\gpio.tmp
+2026-09-02 00:11:46,067 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-09-02 00:11:46,072 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_inc.tmp_save
+2026-09-02 00:11:46,115 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_inc.tmp
+2026-09-02 00:11:46,117 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-09-02 00:11:46,158 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelInit.tmp
+2026-09-02 00:11:46,161 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-09-02 00:11:46,204 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelStart.tmp
+2026-09-02 00:11:46,207 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_typedefs.tmp_save
+2026-09-02 00:11:46,246 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_typedefs.tmp
+2026-09-02 00:11:46,249 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_vars.tmp_save
+2026-09-02 00:11:46,283 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_vars.tmp
+2026-09-02 00:11:46,286 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_pfp.tmp_save
+2026-09-02 00:11:46,324 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_pfp.tmp
+2026-09-02 00:11:46,327 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-09-02 00:11:46,370 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_obj_creat.tmp
+2026-09-02 00:11:46,372 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_default_thread.tmp_save
+2026-09-02 00:11:46,431 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_default_thread.tmp
+2026-09-02 00:11:46,434 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_threads.tmp_save
+2026-09-02 00:11:46,468 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_threads.tmp
+2026-09-02 00:11:46,474 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-09-02 00:11:46,479 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_inc.tmp_save
+2026-09-02 00:11:46,514 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_inc.tmp
+2026-09-02 00:11:46,517 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-09-02 00:11:46,561 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelInit.tmp
+2026-09-02 00:11:46,565 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-09-02 00:11:46,606 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_kernelStart.tmp
+2026-09-02 00:11:46,610 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_typedefs.tmp_save
+2026-09-02 00:11:46,647 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_typedefs.tmp
+2026-09-02 00:11:46,650 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_vars.tmp_save
+2026-09-02 00:11:46,728 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_vars.tmp
+2026-09-02 00:11:46,732 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_pfp.tmp_save
+2026-09-02 00:11:46,767 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_pfp.tmp
+2026-09-02 00:11:46,773 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-09-02 00:11:46,816 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_obj_creat.tmp
+2026-09-02 00:11:46,818 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_default_thread.tmp_save
+2026-09-02 00:11:46,864 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_default_thread.tmp
+2026-09-02 00:11:46,870 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_threads.tmp_save
+2026-09-02 00:11:46,910 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\rtos_threads.tmp
+2026-09-02 00:11:46,914 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\FreeRTOSConfig.h_save
+2026-09-02 00:11:46,977 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\FreeRTOSConfig.h
+2026-09-02 00:11:46,981 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\freertos.c_save
+2026-09-02 00:11:47,027 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\freertos.c
+2026-09-02 00:11:47,035 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_it.c_save
+2026-09-02 00:11:47,144 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_it.c
+2026-09-02 00:11:47,149 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\stm32f4xx_it.h_save
+2026-09-02 00:11:47,198 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\stm32f4xx_it.h
+2026-09-02 00:11:47,213 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_hal_msp.c_save
+2026-09-02 00:11:47,315 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_hal_msp.c
+2026-09-02 00:11:47,320 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\system.tmp_save
+2026-09-02 00:11:47,368 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\MXTmpFiles\system.tmp
+2026-09-02 00:11:47,373 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2026-09-02 00:11:47,427 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\stm32f4xx_hal_timebase_tim.c
+2026-09-02 00:11:47,474 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-09-02 00:11:47,530 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\stm32f4xx_hal_conf.h
+2026-09-02 00:11:47,554 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\main.h_save
+2026-09-02 00:11:47,607 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Inc\main.h
+2026-09-02 00:11:47,611 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\main.c_save
+2026-09-02 00:11:47,681 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\010Cnt_Sema_Tasks\Core\Src\main.c
+2026-09-02 00:11:48,079 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 279mS.
+2026-09-02 00:11:48,083 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-09-02 00:11:48,145 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-09-02 00:11:48,755 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 673mS.
+2026-09-02 00:11:48,756 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-09-02 00:11:48,759 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-09-02 01:48:14,555 [INFO] WebApp:194 - Connection lost
+2026-09-02 01:48:14,917 [INFO] WebApp:191 - Connection restablished
+2026-09-02 01:48:18,614 [INFO] WebApp:194 - Connection lost
+2026-09-02 01:48:18,789 [INFO] WebApp:191 - Connection restablished
+2026-09-02 02:13:47,776 [INFO] WebApp:194 - Connection lost
+2026-09-02 02:13:48,092 [INFO] WebApp:191 - Connection restablished
+2026-09-02 02:13:54,129 [INFO] WebApp:194 - Connection lost
+2026-09-02 02:13:54,385 [INFO] WebApp:191 - Connection restablished
+2026-09-02 10:55:28,576 [INFO] WebApp:194 - Connection lost
+2026-09-02 10:55:28,750 [INFO] WebApp:191 - Connection restablished
+2026-09-02 10:57:31,506 [INFO] WebApp:194 - Connection lost
+2026-09-02 10:57:31,787 [INFO] WebApp:191 - Connection restablished
+2026-09-02 10:57:34,087 [INFO] WebApp:194 - Connection lost
+2026-09-02 10:57:34,294 [INFO] WebApp:191 - Connection restablished
+2026-09-02 10:57:37,299 [INFO] WebApp:194 - Connection lost
+2026-09-02 10:57:37,481 [INFO] WebApp:191 - Connection restablished
+2026-09-02 11:01:47,647 [INFO] WebApp:194 - Connection lost
+2026-09-02 11:01:51,059 [INFO] WebApp:191 - Connection restablished
+2026-09-02 11:01:54,286 [INFO] WebApp:194 - Connection lost
+2026-09-02 11:01:57,943 [INFO] WebApp:191 - Connection restablished
+2026-09-02 11:02:01,095 [INFO] WebApp:194 - Connection lost
+2026-09-02 11:02:01,292 [INFO] WebApp:191 - Connection restablished
+2026-09-02 11:30:03,585 [INFO] WebApp:194 - Connection lost
+2026-09-02 11:30:03,990 [INFO] WebApp:191 - Connection restablished
+2026-09-02 11:30:09,559 [INFO] WebApp:194 - Connection lost
+2026-09-02 11:30:09,748 [INFO] WebApp:191 - Connection restablished
+2026-09-02 14:27:21,372 [INFO] WebApp:194 - Connection lost
+2026-09-02 14:32:23,346 [INFO] WebApp:191 - Connection restablished
+2026-09-02 14:32:26,561 [INFO] WebApp:194 - Connection lost
+2026-09-02 14:32:26,757 [INFO] WebApp:191 - Connection restablished
+2026-09-02 14:35:01,072 [INFO] WebApp:194 - Connection lost
+2026-09-02 14:35:01,270 [INFO] WebApp:191 - Connection restablished
+2026-09-02 15:42:35,969 [INFO] WebApp:194 - Connection lost
+2026-09-02 15:48:35,318 [INFO] WebApp:191 - Connection restablished
+2026-09-02 15:48:37,681 [INFO] WebApp:194 - Connection lost
+2026-09-02 15:48:37,899 [INFO] WebApp:191 - Connection restablished
+2026-09-02 17:41:14,133 [INFO] WebApp:194 - Connection lost
+2026-09-02 17:41:14,452 [INFO] WebApp:191 - Connection restablished
+2026-09-02 17:41:14,567 [INFO] WebApp:194 - Connection lost
+2026-09-02 17:41:14,945 [INFO] WebApp:191 - Connection restablished
+2026-09-02 18:16:13,109 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:11:39,965 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:23:48,101 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:23:56,376 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:24:08,246 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:24:08,556 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:24:10,574 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:24:10,857 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:24:13,087 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:24:13,403 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:25:58,606 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:25:58,953 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:54:28,759 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:56:59,222 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:57:00,056 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:57:01,340 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:59:23,160 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:59:27,309 [INFO] WebApp:191 - Connection restablished
+2026-09-02 20:59:29,719 [INFO] WebApp:194 - Connection lost
+2026-09-02 20:59:29,922 [INFO] WebApp:191 - Connection restablished
+2026-09-02 21:20:17,293 [INFO] WebApp:194 - Connection lost
+2026-09-02 21:20:17,933 [INFO] WebApp:191 - Connection restablished
+2026-09-02 21:20:21,101 [INFO] WebApp:194 - Connection lost
+2026-09-02 21:20:21,462 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:47:00,820 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:47:06,475 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:47:08,076 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:47:08,364 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:48:15,630 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:48:15,959 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:48:46,146 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:48:47,193 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:48:59,079 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:48:59,466 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:49:20,577 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:49:33,204 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:49:40,208 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:49:40,681 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:50:07,813 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:50:10,034 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:50:11,853 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:50:12,244 [INFO] WebApp:191 - Connection restablished
+2026-09-02 22:51:54,622 [INFO] WebApp:194 - Connection lost
+2026-09-02 22:52:06,728 [INFO] WebApp:191 - Connection restablished
+2026-09-02 23:20:38,116 [INFO] WebApp:194 - Connection lost
+2026-09-02 23:27:50,152 [INFO] WebApp:191 - Connection restablished
+2026-09-02 23:28:20,711 [INFO] WebApp:194 - Connection lost
+2026-09-02 23:29:14,641 [INFO] WebApp:191 - Connection restablished
+2026-09-02 23:29:18,059 [INFO] WebApp:194 - Connection lost
+2026-09-02 23:29:18,597 [INFO] WebApp:191 - Connection restablished

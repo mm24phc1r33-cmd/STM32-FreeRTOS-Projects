@@ -1,0 +1,438 @@
+/*
+ * led_effect.c
+ *
+ * Created on: Aug 31, 2026
+ * Author: Monika
+ */
+
+#include "main.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "timers.h"
+
+/* =========================================================
+ *                EXTERNAL TIMER HANDLES
+ * =========================================================
+ *
+ * Timer handles are created in main.c.
+ *
+ * handle_led_timer[0] -> LED Effect 1
+ * handle_led_timer[1] -> LED Effect 2
+ * handle_led_timer[2] -> LED Effect 3
+ * handle_led_timer[3] -> LED Effect 4
+ *
+ * =========================================================
+ */
+
+extern TimerHandle_t handle_led_timer[4];
+
+
+/* =========================================================
+ *                  FUNCTION PROTOTYPES
+ * =========================================================
+ */
+
+void led_effect(int n);
+void led_effect_stop(void);
+void led_effect_callback(TimerHandle_t xTimer);
+
+void turn_off_all_leds(void);
+void turn_on_all_leds(void);
+void turn_on_even_leds(void);
+void turn_on_odd_leds(void);
+
+void LED_control(int value);
+
+void LED_effect1(void);
+void LED_effect2(void);
+void LED_effect3(void);
+void LED_effect4(void);
+
+
+/* =========================================================
+ *                  LED EFFECT START
+ * =========================================================
+ *
+ * n = 1 -> Effect 1
+ * n = 2 -> Effect 2
+ * n = 3 -> Effect 3
+ * n = 4 -> Effect 4
+ *
+ * Before starting a new effect, all previous timers
+ * are stopped.
+ *
+ * =========================================================
+ */
+
+void led_effect(int n)
+{
+    /* Stop any previously running LED effect */
+    led_effect_stop();
+
+    /* Check valid effect number */
+    if (n >= 1 && n <= 4)
+    {
+        if (handle_led_timer[n - 1] != NULL)
+        {
+            xTimerStart(
+                handle_led_timer[n - 1],
+                portMAX_DELAY
+            );
+        }
+    }
+}
+
+
+/* =========================================================
+ *                  STOP LED EFFECT
+ * =========================================================
+ *
+ * Stops all four software timers and turns OFF
+ * all LEDs.
+ *
+ * =========================================================
+ */
+
+void led_effect_stop(void)
+{
+    int i;
+
+    /* Stop all LED timers */
+    for (i = 0; i < 4; i++)
+    {
+        if (handle_led_timer[i] != NULL)
+        {
+            xTimerStop(
+                handle_led_timer[i],
+                portMAX_DELAY
+            );
+        }
+    }
+
+    /* Turn OFF all LEDs */
+    turn_off_all_leds();
+}
+
+
+/* =========================================================
+ *                  TIMER CALLBACK
+ * =========================================================
+ *
+ * This function is called automatically by FreeRTOS
+ * whenever one of the LED software timers expires.
+ *
+ * Timer ID:
+ *
+ * 1 -> LED_effect1()
+ * 2 -> LED_effect2()
+ * 3 -> LED_effect3()
+ * 4 -> LED_effect4()
+ *
+ * =========================================================
+ */
+
+void led_effect_callback(TimerHandle_t xTimer)
+{
+    uint32_t id;
+
+    /* Get timer ID */
+    id = (uint32_t)pvTimerGetTimerID(xTimer);
+
+    switch (id)
+    {
+        case 1:
+            LED_effect1();
+            break;
+
+        case 2:
+            LED_effect2();
+            break;
+
+        case 3:
+            LED_effect3();
+            break;
+
+        case 4:
+            LED_effect4();
+            break;
+
+        default:
+            break;
+    }
+}
+
+
+/* =========================================================
+ *                  TURN OFF ALL LEDs
+ * =========================================================
+ */
+
+void turn_off_all_leds(void)
+{
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_GREEN_Pin,
+        GPIO_PIN_RESET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_ORANGE_Pin,
+        GPIO_PIN_RESET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_RED_Pin,
+        GPIO_PIN_RESET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_YELLOW_Pin,
+        GPIO_PIN_RESET
+    );
+}
+
+
+/* =========================================================
+ *                  TURN ON ALL LEDs
+ * =========================================================
+ */
+
+void turn_on_all_leds(void)
+{
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_GREEN_Pin,
+        GPIO_PIN_SET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_ORANGE_Pin,
+        GPIO_PIN_SET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_RED_Pin,
+        GPIO_PIN_SET
+    );
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_YELLOW_Pin,
+        GPIO_PIN_SET
+    );
+}
+
+
+/* =========================================================
+ *                    LED CONTROL
+ * =========================================================
+ *
+ * Bit mapping:
+ *
+ * Bit 0 -> GREEN
+ * Bit 1 -> ORANGE
+ * Bit 2 -> RED
+ * Bit 3 -> YELLOW
+ *
+ * Example:
+ *
+ * 0x01 = 0001 -> GREEN
+ * 0x02 = 0010 -> ORANGE
+ * 0x04 = 0100 -> RED
+ * 0x08 = 1000 -> YELLOW
+ *
+ * =========================================================
+ */
+
+void LED_control(int value)
+{
+    /* GREEN LED */
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_GREEN_Pin,
+        (value & (1 << 0))
+            ? GPIO_PIN_SET
+            : GPIO_PIN_RESET
+    );
+
+    /* ORANGE LED */
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_ORANGE_Pin,
+        (value & (1 << 1))
+            ? GPIO_PIN_SET
+            : GPIO_PIN_RESET
+    );
+
+    /* RED LED */
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_RED_Pin,
+        (value & (1 << 2))
+            ? GPIO_PIN_SET
+            : GPIO_PIN_RESET
+    );
+
+    /* YELLOW LED */
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_YELLOW_Pin,
+        (value & (1 << 3))
+            ? GPIO_PIN_SET
+            : GPIO_PIN_RESET
+    );
+}
+
+
+/* =========================================================
+ *                  EVEN LEDs
+ * =========================================================
+ *
+ * GREEN + RED
+ *
+ * 0101 = 0x05
+ *
+ * =========================================================
+ */
+
+void turn_on_even_leds(void)
+{
+    LED_control(0x05);
+}
+
+
+/* =========================================================
+ *                   ODD LEDs
+ * =========================================================
+ *
+ * ORANGE + YELLOW
+ *
+ * 1010 = 0x0A
+ *
+ * =========================================================
+ */
+
+void turn_on_odd_leds(void)
+{
+    LED_control(0x0A);
+}
+
+
+/* =========================================================
+ *                    EFFECT 1
+ * =========================================================
+ *
+ * All LEDs ON
+ * All LEDs OFF
+ * All LEDs ON
+ * All LEDs OFF
+ *
+ * =========================================================
+ */
+
+void LED_effect1(void)
+{
+    static int flag = 0;
+
+    flag ^= 1;
+
+    if (flag)
+    {
+        turn_on_all_leds();
+    }
+    else
+    {
+        turn_off_all_leds();
+    }
+}
+
+
+/* =========================================================
+ *                    EFFECT 2
+ * =========================================================
+ *
+ * GREEN + RED
+ *
+ * then
+ *
+ * ORANGE + YELLOW
+ *
+ * =========================================================
+ */
+
+void LED_effect2(void)
+{
+    static int flag = 0;
+
+    flag ^= 1;
+
+    if (flag)
+    {
+        turn_on_even_leds();
+    }
+    else
+    {
+        turn_on_odd_leds();
+    }
+}
+
+
+/* =========================================================
+ *                    EFFECT 3
+ * =========================================================
+ *
+ * LED sequence:
+ *
+ * GREEN
+ * ORANGE
+ * RED
+ * YELLOW
+ * GREEN
+ * ...
+ *
+ * =========================================================
+ */
+
+void LED_effect3(void)
+{
+    static int i = 0;
+
+    LED_control(
+        0x01 << (i % 4)
+    );
+
+    i++;
+}
+
+
+/* =========================================================
+ *                    EFFECT 4
+ * =========================================================
+ *
+ * LED sequence:
+ *
+ * YELLOW
+ * RED
+ * ORANGE
+ * GREEN
+ * YELLOW
+ * ...
+ *
+ * =========================================================
+ */
+
+void LED_effect4(void)
+{
+    static int i = 0;
+
+    LED_control(
+        0x08 >> (i % 4)
+    );
+
+    i++;
+}

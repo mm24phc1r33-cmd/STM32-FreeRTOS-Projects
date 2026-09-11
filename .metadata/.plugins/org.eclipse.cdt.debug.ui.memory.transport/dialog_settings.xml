@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EXPORT_DIALOG">
+		<item key="Start" value="0x20004f38"/>
+		<item key="End" value="0x20005894"/>
+		<item key="Initial address" value="0x20004f38"/>
+		<item key="File" value="D:\Workspace\recordes\0020.SVdat"/>
+		<item key="SELECTED_EXPORTER" value="rawbinary"/>
+	</section>
+</section>

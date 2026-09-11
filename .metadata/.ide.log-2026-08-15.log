@@ -1,0 +1,111 @@
+2026-08-15 00:12:02,370 [INFO] WebApp:194 - Connection lost
+2026-08-15 00:12:02,706 [INFO] WebApp:191 - Connection restablished
+2026-08-15 00:13:28,264 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 00:13:33,071 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 00:13:35,383 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 00:15:08,602 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 00:18:30,715 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Aug 15, 2026 12:18:30 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+2026-08-15 00:18:30,717 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-15 00:18:30,718 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2026-08-15 00:26:57,689 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 00:27:03,239 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 00:27:05,181 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 00:28:17,785 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 00:28:19,338 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 00:29:17,760 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 10:29:49,757 [INFO] WebApp:194 - Connection lost
+2026-08-15 10:29:55,559 [INFO] WebApp:191 - Connection restablished
+2026-08-15 12:31:04,801 [INFO] WebApp:194 - Connection lost
+2026-08-15 12:34:43,109 [INFO] WebApp:191 - Connection restablished
+2026-08-15 12:34:43,681 [INFO] WebApp:194 - Connection lost
+2026-08-15 12:34:44,177 [INFO] WebApp:191 - Connection restablished
+2026-08-15 12:34:47,222 [INFO] WebApp:194 - Connection lost
+2026-08-15 12:34:47,482 [INFO] WebApp:191 - Connection restablished
+2026-08-15 12:35:43,550 [INFO] WebApp:194 - Connection lost
+2026-08-15 13:32:51,327 [INFO] WebApp:191 - Connection restablished
+2026-08-15 13:32:52,187 [INFO] WebApp:194 - Connection lost
+2026-08-15 13:32:52,872 [INFO] WebApp:191 - Connection restablished
+2026-08-15 13:46:10,341 [INFO] WebApp:194 - Connection lost
+2026-08-15 13:46:10,693 [INFO] WebApp:191 - Connection restablished
+2026-08-15 13:53:54,344 [INFO] WebApp:194 - Connection lost
+2026-08-15 13:53:54,680 [INFO] WebApp:191 - Connection restablished
+2026-08-15 13:54:10,268 [INFO] WebApp:194 - Connection lost
+2026-08-15 13:54:11,985 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:09:28,199 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:09:29,364 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:10:04,643 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:30:05,664 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:32:15,001 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:32:16,354 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:32:17,807 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:32:18,077 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:32:21,045 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:32:21,364 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:37:18,836 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:37:19,458 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:54:37,260 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:54:37,683 [INFO] WebApp:191 - Connection restablished
+2026-08-15 14:54:43,293 [INFO] WebApp:194 - Connection lost
+2026-08-15 14:54:43,496 [INFO] WebApp:191 - Connection restablished
+2026-08-15 16:36:58,969 [INFO] WebApp:194 - Connection lost
+2026-08-15 16:36:59,363 [INFO] WebApp:191 - Connection restablished
+2026-08-15 16:37:29,587 [INFO] WebApp:194 - Connection lost
+2026-08-15 16:37:29,935 [INFO] WebApp:191 - Connection restablished
+2026-08-15 16:50:24,425 [INFO] WebApp:194 - Connection lost
+2026-08-15 16:50:24,755 [INFO] WebApp:191 - Connection restablished
+2026-08-15 16:50:28,311 [INFO] WebApp:194 - Connection lost
+2026-08-15 16:50:28,528 [INFO] WebApp:191 - Connection restablished
+2026-08-15 18:23:48,417 [INFO] WebApp:194 - Connection lost
+2026-08-15 18:23:48,738 [INFO] WebApp:191 - Connection restablished
+2026-08-15 18:23:54,758 [INFO] WebApp:194 - Connection lost
+2026-08-15 18:23:54,950 [INFO] WebApp:191 - Connection restablished
+2026-08-15 21:05:30,472 [INFO] WebApp:194 - Connection lost
+2026-08-15 21:06:19,628 [INFO] WebApp:191 - Connection restablished
+2026-08-15 21:06:22,008 [INFO] WebApp:194 - Connection lost
+2026-08-15 21:06:22,205 [INFO] WebApp:191 - Connection restablished
+2026-08-15 21:40:09,546 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command com.st.stm32cube.ide.mcu.debug.swv.core.start_trace
+2026-08-15 21:40:09,552 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:479)
+2026-08-15 21:40:09,554 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+2026-08-15 21:40:09,555 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+2026-08-15 21:40:09,556 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+2026-08-15 21:40:09,557 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:362)
+2026-08-15 21:40:09,558 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.ui.SWVView$OpenConfigAction.run(SWVView.java:113)
+2026-08-15 21:40:09,558 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+2026-08-15 21:40:09,559 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+2026-08-15 21:40:09,561 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+2026-08-15 21:40:09,562 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+2026-08-15 21:40:09,563 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+2026-08-15 21:40:09,563 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+2026-08-15 21:40:09,564 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+2026-08-15 21:40:09,565 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+2026-08-15 21:40:09,566 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+2026-08-15 21:40:09,567 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+2026-08-15 21:40:09,569 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+2026-08-15 21:40:09,570 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+2026-08-15 21:40:09,571 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+2026-08-15 21:40:09,571 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+2026-08-15 21:40:09,573 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+2026-08-15 21:40:09,574 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+2026-08-15 21:40:09,575 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2026-08-15 21:40:09,577 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+2026-08-15 21:40:09,578 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+2026-08-15 21:40:09,579 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+2026-08-15 21:40:09,580 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+2026-08-15 21:40:09,581 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+2026-08-15 21:40:09,583 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2026-08-15 21:40:09,584 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+2026-08-15 21:40:09,585 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+2026-08-15 21:40:09,586 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+2026-08-15 21:40:09,586 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+2026-08-15 21:40:49,473 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 21:40:53,824 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 21:40:56,068 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-15 21:42:08,480 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-15 21:43:01,143 [INFO] WebApp:194 - Connection lost
+2026-08-15 21:43:01,578 [INFO] WebApp:191 - Connection restablished
+2026-08-15 21:43:05,246 [INFO] WebApp:194 - Connection lost
+2026-08-15 21:43:05,520 [INFO] WebApp:191 - Connection restablished
+2026-08-15 22:11:15,406 [INFO] WebApp:194 - Connection lost
+2026-08-15 22:11:16,460 [INFO] WebApp:191 - Connection restablished
+2026-08-15 22:11:21,401 [INFO] WebApp:194 - Connection lost
+2026-08-15 22:11:21,595 [INFO] WebApp:191 - Connection restablished

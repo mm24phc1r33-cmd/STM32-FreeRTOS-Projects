@@ -1,0 +1,13 @@
+../Core/Src/main.c:99:6:printmsg	16	static
+../Core/Src/main.c:104:6:vprintmsg	16	static
+../Core/Src/main.c:110:13:prvSetupHardware	4	static
+../Core/Src/main.c:115:13:prvSetupUart	4	static
+../Core/Src/main.c:120:6:prvSetupGpio	4	static
+../Core/Src/main.c:130:5:main	16	static
+../Core/Src/main.c:195:6:vManagerTask	24	static,ignoring_inline_asm
+../Core/Src/main.c:229:6:EmployeeDoWork	16	static
+../Core/Src/main.c:238:13:vEmployeeTask	24	static
+../Core/Src/main.c:270:6:SystemClock_Config	88	static
+../Core/Src/main.c:318:6:StartDefaultTask	16	static
+../Core/Src/main.c:337:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:355:6:Error_Handler	4	static,ignoring_inline_asm

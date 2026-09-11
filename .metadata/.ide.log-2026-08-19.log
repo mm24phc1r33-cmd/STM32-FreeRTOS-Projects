@@ -1,0 +1,5 @@
+2026-08-19 11:51:47,228 [INFO] WebApp:194 - Connection lost
+2026-08-19 16:41:33,547 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-19 16:41:38,301 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2026-08-19 16:41:40,339 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2026-08-19 20:44:35,221 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

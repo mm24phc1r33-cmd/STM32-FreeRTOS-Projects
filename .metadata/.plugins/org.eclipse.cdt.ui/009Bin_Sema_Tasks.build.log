@@ -1,0 +1,23 @@
+20:25:43 **** Incremental Build of configuration Debug for project 009Bin_Sema_Tasks ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"D:/Workspace/RTOS_Workspace/freeRTOS/Middlewares/Third_Party/SEGGER/Config" -I"D:/Workspace/RTOS_Workspace/freeRTOS/Middlewares/Third_Party/SEGGER/OS" -I"D:/Workspace/RTOS_Workspace/freeRTOS/Middlewares/Third_Party/SEGGER/segger" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:115:13: warning: 'prvSetupUart' defined but not used [-Wunused-function]
+  115 | static void prvSetupUart(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:110:13: warning: 'prvSetupHardware' defined but not used [-Wunused-function]
+  110 | static void prvSetupHardware(void)
+      |             ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "009Bin_Sema_Tasks.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Workspace\RTOS_Workspace\009Bin_Sema_Tasks\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009Bin_Sema_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 009Bin_Sema_Tasks.elf
+ 
+arm-none-eabi-size  009Bin_Sema_Tasks.elf 
+arm-none-eabi-objdump -h -S 009Bin_Sema_Tasks.elf  > "009Bin_Sema_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  31028	    108	  26780	  57916	   e23c	009Bin_Sema_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: 009Bin_Sema_Tasks.list
+ 
+
+20:25:45 Build Finished. 0 errors, 2 warnings. (took 1s.642ms)
+

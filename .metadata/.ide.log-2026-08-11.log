@@ -1,0 +1,159 @@
+2026-08-12 00:03:56,190 [INFO] WebApp:194 - Connection lost
+2026-08-12 00:05:01,096 [INFO] WebApp:191 - Connection restablished
+2026-08-12 00:11:12,278 [INFO] WebApp:194 - Connection lost
+2026-08-12 00:11:37,582 [INFO] WebApp:191 - Connection restablished
+2026-08-12 16:45:01,620 [INFO] WebApp:194 - Connection lost
+2026-08-12 16:45:01,753 [INFO] WebApp:191 - Connection restablished
+2026-08-12 17:19:03,231 [INFO] WebApp:194 - Connection lost
+2026-08-12 17:19:03,352 [INFO] WebApp:191 - Connection restablished
+2026-08-12 17:47:13,145 [INFO] WebApp:194 - Connection lost
+2026-08-12 17:47:13,425 [INFO] WebApp:191 - Connection restablished
+2026-08-12 17:47:25,999 [INFO] WebApp:194 - Connection lost
+2026-08-12 17:47:26,294 [INFO] WebApp:191 - Connection restablished
+2026-08-12 18:49:53,342 [INFO] WebApp:194 - Connection lost
+2026-08-12 18:56:36,804 [INFO] WebApp:191 - Connection restablished
+2026-08-12 19:06:32,078 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:06:32,232 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:06:36,211 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:06:36,274 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:06:36,384 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:06:38,152 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 852225208 Bytes (1073741824)
+2026-08-12 19:06:40,488 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 876939720 Bytes (1073741824)
+2026-08-12 19:06:42,836 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 916714680 Bytes (1073741824)
+2026-08-12 19:06:47,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-12 19:06:47,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-12 19:06:47,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-12 19:06:47,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-12 19:06:47,117 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-12 19:06:47,170 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\license.tmp_save
+2026-08-12 19:06:47,390 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\license.tmp
+2026-08-12 19:06:47,486 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-12 19:06:47,492 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-12 19:06:47,578 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp
+2026-08-12 19:06:47,582 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-12 19:06:47,656 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp
+2026-08-12 19:06:47,659 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-12 19:06:47,709 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp
+2026-08-12 19:06:47,713 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-12 19:06:47,759 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-12 19:06:47,763 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-12 19:06:47,805 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-12 19:06:47,808 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-12 19:06:47,851 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-12 19:06:47,854 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-12 19:06:47,894 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp
+2026-08-12 19:06:47,902 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-12 19:06:47,907 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-12 19:06:47,948 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp
+2026-08-12 19:06:47,952 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-12 19:06:47,994 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp
+2026-08-12 19:06:47,997 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-12 19:06:48,037 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp
+2026-08-12 19:06:48,041 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-12 19:06:48,084 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-12 19:06:48,087 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-12 19:06:48,128 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-12 19:06:48,133 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-12 19:06:48,172 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-12 19:06:48,175 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-12 19:06:48,214 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp
+2026-08-12 19:06:48,217 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\FreeRTOSConfig.h_save
+2026-08-12 19:06:48,270 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\FreeRTOSConfig.h
+2026-08-12 19:06:48,273 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\freertos.c_save
+2026-08-12 19:06:48,314 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\freertos.c
+2026-08-12 19:06:48,322 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_it.c_save
+2026-08-12 19:06:48,447 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_it.c
+2026-08-12 19:06:48,451 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_it.h_save
+2026-08-12 19:06:48,488 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_it.h
+2026-08-12 19:06:48,495 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-12 19:06:48,556 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_hal_msp.c
+2026-08-12 19:06:48,559 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\system.tmp_save
+2026-08-12 19:06:48,593 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\system.tmp
+2026-08-12 19:06:48,600 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-12 19:06:48,642 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-12 19:06:48,660 [INFO] ApiDbMcu:532 - Load IP Config File for RCC
+2026-08-12 19:06:48,666 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\main.h_save
+2026-08-12 19:06:48,729 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\main.h
+2026-08-12 19:06:48,733 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\main.c_save
+2026-08-12 19:06:48,804 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\main.c
+2026-08-12 19:06:49,100 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 191mS.
+2026-08-12 19:06:49,104 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-12 19:06:49,156 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-12 19:06:49,159 [INFO] ApiDbMcu:532 - Load IP Config File for FATFS
+2026-08-12 19:06:49,162 [INFO] ApiDbMcu:532 - Load IP Config File for LIBJPEG
+2026-08-12 19:06:49,169 [INFO] ApiDbMcu:532 - Load IP Config File for MBEDTLS
+2026-08-12 19:06:49,174 [INFO] ApiDbMcu:532 - Load IP Config File for USB_DEVICE
+2026-08-12 19:06:49,178 [INFO] ApiDbMcu:532 - Load IP Config File for USB_HOST
+2026-08-12 19:06:49,973 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 869mS.
+2026-08-12 19:06:49,974 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-12 19:06:49,976 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-12 19:07:22,247 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:22,300 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:22,398 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:24,900 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:24,969 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:25,100 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2026-08-12 19:07:29,007 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 856438368 Bytes (1073741824)
+2026-08-12 19:07:30,679 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 874386680 Bytes (1073741824)
+2026-08-12 19:07:32,090 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 936611736 Bytes (1073741824)
+2026-08-12 19:08:34,792 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-12 19:08:34,792 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-12 19:08:34,792 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-12 19:08:34,792 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-12 19:08:34,793 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-12 19:08:34,866 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\license.tmp_save
+2026-08-12 19:08:34,932 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\license.tmp
+2026-08-12 19:08:34,960 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-12 19:08:34,968 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-12 19:08:35,015 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp
+2026-08-12 19:08:35,019 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-12 19:08:35,071 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp
+2026-08-12 19:08:35,075 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-12 19:08:35,115 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp
+2026-08-12 19:08:35,119 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-12 19:08:35,162 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-12 19:08:35,167 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-12 19:08:35,207 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-12 19:08:35,210 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-12 19:08:35,250 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-12 19:08:35,253 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-12 19:08:35,292 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp
+2026-08-12 19:08:35,299 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-12 19:08:35,307 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp_save
+2026-08-12 19:08:35,344 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_inc.tmp
+2026-08-12 19:08:35,348 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp_save
+2026-08-12 19:08:35,393 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_vars.tmp
+2026-08-12 19:08:35,396 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-12 19:08:35,446 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_pfp.tmp
+2026-08-12 19:08:35,452 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-12 19:08:35,491 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-12 19:08:35,494 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-12 19:08:35,535 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-12 19:08:35,540 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-12 19:08:35,577 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_default_thread.tmp
+2026-08-12 19:08:35,582 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp_save
+2026-08-12 19:08:35,620 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\rtos_threads.tmp
+2026-08-12 19:08:35,625 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\FreeRTOSConfig.h_save
+2026-08-12 19:08:35,679 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\FreeRTOSConfig.h
+2026-08-12 19:08:35,683 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\freertos.c_save
+2026-08-12 19:08:35,730 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\freertos.c
+2026-08-12 19:08:35,738 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_it.c_save
+2026-08-12 19:08:35,794 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_it.c
+2026-08-12 19:08:35,805 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_it.h_save
+2026-08-12 19:08:35,855 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_it.h
+2026-08-12 19:08:35,864 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-12 19:08:35,924 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\stm32f4xx_hal_msp.c
+2026-08-12 19:08:35,927 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\system.tmp_save
+2026-08-12 19:08:35,972 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\MXTmpFiles\system.tmp
+2026-08-12 19:08:35,983 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-12 19:08:36,035 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-12 19:08:36,060 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\main.h_save
+2026-08-12 19:08:36,120 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Inc\main.h
+2026-08-12 19:08:36,129 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\main.c_save
+2026-08-12 19:08:36,210 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\freeRTOS\Core\Src\main.c
+2026-08-12 19:08:36,595 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 243mS.
+2026-08-12 19:08:36,598 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-12 19:08:36,810 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-12 19:08:37,515 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 917mS.
+2026-08-12 19:08:37,515 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-12 19:08:37,519 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.

@@ -1,0 +1,10 @@
+../Core/Src/main.c:91:5:main	3
+../Core/Src/main.c:199:6:SystemClock_Config	3
+../Core/Src/main.c:241:13:MX_GPIO_Init	1
+../Core/Src/main.c:278:6:switch_priority	4
+../Core/Src/main.c:307:13:led_green_handler	1
+../Core/Src/main.c:319:13:led_red_handler	1
+../Core/Src/main.c:330:6:button_interrupt_handler	1
+../Core/Src/main.c:345:6:StartDefaultTask	1
+../Core/Src/main.c:364:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:382:6:Error_Handler	1

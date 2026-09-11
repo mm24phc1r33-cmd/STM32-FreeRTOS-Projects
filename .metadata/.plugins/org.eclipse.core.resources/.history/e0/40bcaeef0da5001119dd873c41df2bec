@@ -1,0 +1,703 @@
+/*
+ * task_handler.c
+ *
+ * Created on: Aug 31, 2026
+ * Author: Monika
+ */
+
+#include "main.h"
+#include "task_handler.h"
+#include "led_effect.h"
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
+/* =========================================================
+ *                 EXTERNAL VARIABLES
+ * =========================================================
+ */
+
+extern state_t curr_state;
+
+extern TaskHandle_t handle_cmd_task;
+extern TaskHandle_t handle_menu_task;
+extern TaskHandle_t handle_print_task;
+extern TaskHandle_t handle_led_task;
+extern TaskHandle_t handle_rtc_task;
+
+extern QueueHandle_t q_data;
+extern QueueHandle_t q_print;
+
+extern UART_HandleTypeDef huart2;
+
+/* LED software timer handles are defined in main.c */
+extern TimerHandle_t handle_led_timer[4];
+
+
+/* =========================================================
+ *                    MESSAGE STRINGS
+ * =========================================================
+ */
+
+static const char *msg_inv =
+        "\r\n///// Invalid option /////\r\n";
+
+
+static const char *msg_menu =
+        "\r\n"
+        "====================\r\n"
+        "        Menu\r\n"
+        "====================\r\n"
+        "LED effect       : 0\r\n"
+        "Date and time    : 1\r\n"
+        "Exit             : 2\r\n"
+        "Enter your choice here : ";
+
+
+static const char *msg_led =
+        "\r\n"
+        "========================\r\n"
+        "|      LED Effect      |\r\n"
+        "========================\r\n"
+        "(none,e1,e2,e3,e4)\r\n"
+        "Enter your choice here : ";
+
+
+/* =========================================================
+ *                 FUNCTION PROTOTYPES
+ * =========================================================
+ */
+
+int extract_command(command_t *cmd);
+
+void process_command(command_t *cmd);
+
+void menu_task(void *parameters);
+
+void cmd_handler_task(void *parameters);
+
+void print_task(void *parameters);
+
+void led_task(void *parameters);
+
+void rtc_task(void *parameters);
+
+
+
+/* =========================================================
+ *                    COMMAND BUFFER
+ * =========================================================
+ *
+ * One global/static command buffer is used so that the
+ * address remains valid after cmd_handler_task sends it
+ * to another task.
+ *
+ * =========================================================
+ */
+
+static command_t current_command;
+
+
+/* =========================================================
+ *                       MENU TASK
+ * =========================================================
+ */
+
+void menu_task(void *param)
+{
+    uint32_t cmd_addr;
+    command_t *cmd;
+    int option;
+
+    while (1)
+    {
+        /* Send menu to print task */
+        xQueueSend(q_print, &msg_menu, portMAX_DELAY);
+
+        /* Wait for command from command handler */
+        xTaskNotifyWait(
+                0,
+                0,
+                &cmd_addr,
+                portMAX_DELAY
+        );
+
+        cmd = (command_t *)cmd_addr;
+
+        if (cmd == NULL)
+        {
+            continue;
+        }
+
+        if (cmd->len == 1)
+        {
+            option = cmd->payload[0] - '0';
+
+            switch (option)
+            {
+                case 0:
+
+                    curr_state = sLedEffect;
+
+                    /* Wake LED task */
+                    xTaskNotify(
+                            handle_led_task,
+                            0,
+                            eNoAction
+                    );
+
+                    break;
+
+
+                case 1:
+
+                    curr_state = sRtcMenu;
+
+                    /* Wake RTC task */
+                    xTaskNotify(
+                            handle_rtc_task,
+                            0,
+                            eNoAction
+                    );
+
+                    break;
+
+
+                case 2:
+
+                    /* Exit */
+                    xQueueSend(
+                            q_print,
+                            &msg_menu,
+                            portMAX_DELAY
+                    );
+
+                    break;
+
+
+                default:
+
+                    xQueueSend(
+                            q_print,
+                            &msg_inv,
+                            portMAX_DELAY
+                    );
+
+                    break;
+            }
+        }
+        else
+        {
+            xQueueSend(
+                    q_print,
+                    &msg_inv,
+                    portMAX_DELAY
+            );
+        }
+    }
+}
+
+
+/* =========================================================
+ *                COMMAND HANDLER TASK
+ * =========================================================
+ */
+
+void cmd_handler_task(void *param)
+{
+    BaseType_t ret;
+
+    while (1)
+    {
+        /*
+         * Wait until UART ISR notifies this task
+         */
+        ret = xTaskNotifyWait(
+                0,
+                0,
+                NULL,
+                portMAX_DELAY
+        );
+
+        if (ret == pdTRUE)
+        {
+            /*
+             * Extract UART command into static buffer
+             */
+            if (extract_command(&current_command) == 0)
+            {
+                /*
+                 * Process command
+                 */
+                process_command(&current_command);
+            }
+        }
+    }
+}
+
+
+/* =========================================================
+ *                    PROCESS COMMAND
+ * =========================================================
+ */
+
+void process_command(command_t *cmd)
+{
+    if (cmd == NULL)
+    {
+        return;
+    }
+
+    switch (curr_state)
+    {
+        case sMainMenu:
+
+            xTaskNotify(
+                    handle_menu_task,
+                    (uint32_t)cmd,
+                    eSetValueWithOverwrite
+            );
+
+            break;
+
+
+        case sLedEffect:
+
+            xTaskNotify(
+                    handle_led_task,
+                    (uint32_t)cmd,
+                    eSetValueWithOverwrite
+            );
+
+            break;
+
+
+        case sRtcMenu:
+
+        case sRtcTimeConfig:
+
+        case sRtcDateConfig:
+
+        case sRtcReport:
+
+            xTaskNotify(
+                    handle_rtc_task,
+                    (uint32_t)cmd,
+                    eSetValueWithOverwrite
+            );
+
+            break;
+
+
+        default:
+
+            break;
+    }
+}
+
+
+/* =========================================================
+ *                    EXTRACT COMMAND
+ * =========================================================
+ */
+
+int extract_command(command_t *cmd)
+{
+    uint8_t item;
+    uint8_t i = 0;
+
+    if (cmd == NULL)
+    {
+        return -1;
+    }
+
+    /*
+     * Check whether queue contains data
+     */
+    if (uxQueueMessagesWaiting(q_data) == 0)
+    {
+        return -1;
+    }
+
+    /*
+     * Read characters until ENTER
+     */
+    while (i < sizeof(cmd->payload) - 1)
+    {
+        if (xQueueReceive(
+                q_data,
+                &item,
+                0
+            ) == pdTRUE)
+        {
+            if (item == '\n')
+            {
+                break;
+            }
+
+            if (item != '\r')
+            {
+                cmd->payload[i++] = item;
+            }
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    /*
+     * Null terminate string
+     */
+    cmd->payload[i] = '\0';
+
+    /*
+     * Save command length
+     */
+    cmd->len = i;
+
+    return 0;
+}
+
+
+/* =========================================================
+ *                       PRINT TASK
+ * =========================================================
+ */
+
+void print_task(void *param)
+{
+    const char *msg;
+
+    while (1)
+    {
+        /*
+         * Receive pointer from queue
+         */
+        if (xQueueReceive(
+                q_print,
+                &msg,
+                portMAX_DELAY
+            ) == pdTRUE)
+        {
+            if (msg != NULL)
+            {
+                /*
+                 * Send message through UART
+                 */
+                HAL_UART_Transmit(
+                        &huart2,
+                        (uint8_t *)msg,
+                        strlen(msg),
+                        HAL_MAX_DELAY
+                );
+            }
+        }
+    }
+}
+
+
+/* =========================================================
+ *                       LED TASK
+ * =========================================================
+ */
+
+void led_task(void *param)
+{
+    uint32_t cmd_addr;
+    command_t *cmd;
+
+    while (1)
+    {
+        /*
+         * Wait until menu selects LED effect
+         */
+        xTaskNotifyWait(
+                0,
+                0,
+                NULL,
+                portMAX_DELAY
+        );
+
+        /*
+         * Display LED menu
+         */
+        xQueueSend(
+                q_print,
+                &msg_led,
+                portMAX_DELAY
+        );
+
+        /*
+         * Wait for LED command
+         */
+        xTaskNotifyWait(
+                0,
+                0,
+                &cmd_addr,
+                portMAX_DELAY
+        );
+
+        cmd = (command_t *)cmd_addr;
+
+        if (cmd == NULL)
+        {
+            curr_state = sMainMenu;
+
+            xTaskNotify(
+                    handle_menu_task,
+                    0,
+                    eNoAction
+            );
+
+            continue;
+        }
+
+
+        /* =================================================
+         *                 LED COMMAND
+         * =================================================
+         */
+
+        if (strcmp(
+                (char *)cmd->payload,
+                "none"
+            ) == 0)
+        {
+            led_effect_stop();
+        }
+
+        else if (strcmp(
+                (char *)cmd->payload,
+                "e1"
+            ) == 0)
+        {
+            led_effect(1);
+        }
+
+        else if (strcmp(
+                (char *)cmd->payload,
+                "e2"
+            ) == 0)
+        {
+            led_effect(2);
+        }
+
+        else if (strcmp(
+                (char *)cmd->payload,
+                "e3"
+            ) == 0)
+        {
+            led_effect(3);
+        }
+
+        else if (strcmp(
+                (char *)cmd->payload,
+                "e4"
+            ) == 0)
+        {
+            led_effect(4);
+        }
+
+        else
+        {
+            xQueueSend(
+                    q_print,
+                    &msg_inv,
+                    portMAX_DELAY
+            );
+        }
+
+
+        /*
+         * Return to main menu
+         */
+        curr_state = sMainMenu;
+
+        /*
+         * Notify menu task
+         */
+        xTaskNotify(
+                handle_menu_task,
+                0,
+                eNoAction
+        );
+    }
+}
+
+
+/* =========================================================
+ *                       RTC TASK
+ * =========================================================
+ */
+
+void rtc_task(void *parameters)
+{
+    while (1)
+    {
+        /*
+         * RTC functionality can be added here
+         */
+
+        vTaskDelay(
+                pdMS_TO_TICKS(100)
+        );
+    }
+}
+
+
+/* =========================================================
+ *                   LED EFFECT STOP
+ * =========================================================
+ */
+
+void led_effect_stop(void)
+{
+    int i;
+
+    /*
+     * Stop all LED timers
+     */
+    for (i = 0; i < 4; i++)
+    {
+        if (handle_led_timer[i] != NULL)
+        {
+            xTimerStop(
+                    handle_led_timer[i],
+                    0
+            );
+        }
+    }
+
+    /*
+     * Turn OFF all LEDs
+     */
+    HAL_GPIO_WritePin(
+            GPIOB,
+            LED_GREEN_Pin |
+            LED_ORANGE_Pin |
+            LED_RED_Pin |
+            LED_YELLOW_Pin,
+            GPIO_PIN_RESET
+    );
+}
+
+
+/* =========================================================
+ *                     LED EFFECT
+ * =========================================================
+ */
+
+void led_effect(int n)
+{
+    /*
+     * Stop previously running effects
+     */
+    led_effect_stop();
+
+    /*
+     * Start selected timer
+     *
+     * Timer 1 -> e1
+     * Timer 2 -> e2
+     * Timer 3 -> e3
+     * Timer 4 -> e4
+     */
+
+    if (n >= 1 && n <= 4)
+    {
+        if (handle_led_timer[n - 1] != NULL)
+        {
+            xTimerStart(
+                    handle_led_timer[n - 1],
+                    0
+            );
+        }
+    }
+}
+
+
+/* =========================================================
+ *                 LED TIMER CALLBACK
+ * =========================================================
+ */
+
+void led_effect_callback(TimerHandle_t xTimer)
+{
+    uint32_t timer_id;
+
+    /*
+     * Get timer ID
+     */
+    timer_id =
+            (uint32_t)pvTimerGetTimerID(xTimer);
+
+
+    switch (timer_id)
+    {
+        case 1:
+
+            /*
+             * Effect 1
+             * Green LED blink
+             */
+            HAL_GPIO_TogglePin(
+                    GPIOB,
+                    LED_GREEN_Pin
+            );
+
+            break;
+
+
+        case 2:
+
+            /*
+             * Effect 2
+             * Orange LED blink
+             */
+            HAL_GPIO_TogglePin(
+                    GPIOB,
+                    LED_ORANGE_Pin
+            );
+
+            break;
+
+
+        case 3:
+
+            /*
+             * Effect 3
+             * Red LED blink
+             */
+            HAL_GPIO_TogglePin(
+                    GPIOB,
+                    LED_RED_Pin
+            );
+
+            break;
+
+
+        case 4:
+
+            /*
+             * Effect 4
+             * Yellow LED blink
+             */
+            HAL_GPIO_TogglePin(
+                    GPIOB,
+                    LED_YELLOW_Pin
+            );
+
+            break;
+
+
+        default:
+
+            break;
+    }
+}

@@ -1,0 +1,232 @@
+2026-08-30 00:28:39,066 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 739006896 Bytes (1073741824)
+2026-08-30 00:28:40,309 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 762842608 Bytes (1073741824)
+2026-08-30 00:28:42,408 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 841576648 Bytes (1073741824)
+2026-08-30 00:28:44,503 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-30 00:28:44,503 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-30 00:28:44,503 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-30 00:28:44,504 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-30 00:28:44,504 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-30 00:28:44,504 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-30 00:28:44,555 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp_save
+2026-08-30 00:28:44,774 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp
+2026-08-30 00:28:44,795 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp_save
+2026-08-30 00:28:44,902 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp
+2026-08-30 00:28:44,948 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:28:44,953 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:28:45,022 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:28:45,025 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:28:45,086 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:28:45,089 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:28:45,149 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:28:45,152 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:28:45,211 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:28:45,213 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:28:45,271 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:28:45,274 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:28:45,329 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:28:45,332 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:28:45,391 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:28:45,394 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:28:45,446 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:28:45,449 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:28:45,495 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:28:45,502 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:28:45,507 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:28:45,546 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:28:45,551 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:28:45,589 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:28:45,593 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:28:45,632 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:28:45,636 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:28:45,679 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:28:45,683 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:28:45,726 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:28:45,729 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:28:45,769 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:28:45,773 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:28:45,815 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:28:45,819 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:28:45,862 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:28:45,866 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:28:45,907 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:28:45,911 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h_save
+2026-08-30 00:28:45,976 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h
+2026-08-30 00:28:45,980 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c_save
+2026-08-30 00:28:46,025 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c
+2026-08-30 00:28:46,033 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c_save
+2026-08-30 00:28:46,140 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c
+2026-08-30 00:28:46,144 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h_save
+2026-08-30 00:28:46,184 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h
+2026-08-30 00:28:46,193 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-30 00:28:46,253 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c
+2026-08-30 00:28:46,255 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp_save
+2026-08-30 00:28:46,291 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp
+2026-08-30 00:28:46,295 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2026-08-30 00:28:46,337 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c
+2026-08-30 00:28:46,344 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-30 00:28:46,390 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-30 00:28:46,411 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h_save
+2026-08-30 00:28:46,471 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h
+2026-08-30 00:28:46,475 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c_save
+2026-08-30 00:28:46,545 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c
+2026-08-30 00:28:46,898 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 202mS.
+2026-08-30 00:28:46,901 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-30 00:28:46,949 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-30 00:28:47,713 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 812mS.
+2026-08-30 00:28:47,714 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-30 00:28:47,717 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-08-30 00:31:18,654 [INFO] Gpio:278 - dependency for GPIO []
+2026-08-30 00:31:30,089 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 741997032 Bytes (1073741824)
+2026-08-30 00:31:31,750 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 727316968 Bytes (1073741824)
+2026-08-30 00:31:34,330 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 803340776 Bytes (1073741824)
+2026-08-30 00:31:36,056 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-30 00:31:36,056 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-30 00:31:36,056 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-30 00:31:36,056 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-30 00:31:36,056 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-30 00:31:36,057 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-30 00:31:36,093 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp_save
+2026-08-30 00:31:36,129 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp
+2026-08-30 00:31:36,139 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp_save
+2026-08-30 00:31:36,183 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp
+2026-08-30 00:31:36,206 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:31:36,210 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:31:36,249 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:31:36,252 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:31:36,286 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:31:36,289 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:31:36,328 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:31:36,330 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:31:36,365 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:31:36,367 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:31:36,403 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:31:36,405 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:31:36,440 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:31:36,442 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:31:36,489 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:31:36,491 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:31:36,523 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:31:36,525 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:31:36,559 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:31:36,564 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:31:36,570 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:31:36,603 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:31:36,606 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:31:36,640 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:31:36,645 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:31:36,680 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:31:36,683 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:31:36,721 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:31:36,724 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:31:36,760 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:31:36,764 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:31:36,799 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:31:36,803 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:31:36,842 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:31:36,845 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:31:36,881 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:31:36,884 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:31:36,918 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:31:36,921 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h_save
+2026-08-30 00:31:36,967 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h
+2026-08-30 00:31:36,971 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c_save
+2026-08-30 00:31:37,012 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c
+2026-08-30 00:31:37,020 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c_save
+2026-08-30 00:31:37,065 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c
+2026-08-30 00:31:37,069 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h_save
+2026-08-30 00:31:37,106 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h
+2026-08-30 00:31:37,113 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-30 00:31:37,167 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c
+2026-08-30 00:31:37,169 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp_save
+2026-08-30 00:31:37,206 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp
+2026-08-30 00:31:37,208 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2026-08-30 00:31:37,248 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c
+2026-08-30 00:31:37,255 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-30 00:31:37,292 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-30 00:31:37,308 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h_save
+2026-08-30 00:31:37,348 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h
+2026-08-30 00:31:37,352 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c_save
+2026-08-30 00:31:37,412 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c
+2026-08-30 00:31:37,623 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 116mS.
+2026-08-30 00:31:37,625 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-30 00:31:37,693 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-30 00:31:38,294 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 669mS.
+2026-08-30 00:31:38,295 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-08-30 00:31:38,298 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-30 00:40:23,081 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 726733136 Bytes (1073741824)
+2026-08-30 00:40:25,076 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 773378024 Bytes (1073741824)
+2026-08-30 00:40:26,574 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 832098280 Bytes (1073741824)
+2026-08-30 00:40:28,726 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-30 00:40:28,726 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: FREERTOS
+2026-08-30 00:40:28,726 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-30 00:40:28,727 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-30 00:40:28,727 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-30 00:40:28,727 [INFO] CodeGenerator:892 - code generatio: config db path: D:\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2026-08-30 00:40:28,787 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp_save
+2026-08-30 00:40:29,015 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\license.tmp
+2026-08-30 00:40:29,041 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp_save
+2026-08-30 00:40:29,160 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\gpio.tmp
+2026-08-30 00:40:29,212 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:40:29,220 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:40:29,283 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:40:29,286 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:40:29,352 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:40:29,355 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:40:29,417 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:40:29,421 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:40:29,480 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:40:29,483 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:40:29,541 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:40:29,545 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:40:29,602 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:40:29,605 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:40:29,658 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:40:29,662 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:40:29,714 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:40:29,717 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:40:29,760 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:40:29,769 [INFO] Middleware:1452 - No code input for Bsp Dependency
+2026-08-30 00:40:29,775 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp_save
+2026-08-30 00:40:29,818 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_inc.tmp
+2026-08-30 00:40:29,823 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp_save
+2026-08-30 00:40:29,864 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelInit.tmp
+2026-08-30 00:40:29,867 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp_save
+2026-08-30 00:40:29,909 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_kernelStart.tmp
+2026-08-30 00:40:29,913 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp_save
+2026-08-30 00:40:29,956 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_typedefs.tmp
+2026-08-30 00:40:29,959 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp_save
+2026-08-30 00:40:30,008 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_vars.tmp
+2026-08-30 00:40:30,011 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp_save
+2026-08-30 00:40:30,051 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_pfp.tmp
+2026-08-30 00:40:30,054 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp_save
+2026-08-30 00:40:30,096 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_obj_creat.tmp
+2026-08-30 00:40:30,099 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp_save
+2026-08-30 00:40:30,139 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_default_thread.tmp
+2026-08-30 00:40:30,143 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp_save
+2026-08-30 00:40:30,181 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\rtos_threads.tmp
+2026-08-30 00:40:30,185 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h_save
+2026-08-30 00:40:30,246 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\FreeRTOSConfig.h
+2026-08-30 00:40:30,250 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c_save
+2026-08-30 00:40:30,296 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\freertos.c
+2026-08-30 00:40:30,303 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c_save
+2026-08-30 00:40:30,410 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_it.c
+2026-08-30 00:40:30,414 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h_save
+2026-08-30 00:40:30,453 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_it.h
+2026-08-30 00:40:30,461 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-30 00:40:30,520 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_msp.c
+2026-08-30 00:40:30,524 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp_save
+2026-08-30 00:40:30,562 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\MXTmpFiles\system.tmp
+2026-08-30 00:40:30,568 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2026-08-30 00:40:30,613 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\stm32f4xx_hal_timebase_tim.c
+2026-08-30 00:40:30,620 [INFO] CodeEngine:321 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-30 00:40:30,665 [INFO] CodeEngine:345 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-30 00:40:30,686 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h_save
+2026-08-30 00:40:30,755 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Inc\main.h
+2026-08-30 00:40:30,758 [INFO] CodeEngine:265 - oldGeneratedFile, D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c_save
+2026-08-30 00:40:30,832 [INFO] CodeEngine:289 - Generated code: D:\Workspace\RTOS_Workspace\007Task_Priority\Core\Src\main.c
+2026-08-30 00:40:31,174 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 209mS.
+2026-08-30 00:40:31,177 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-08-30 00:40:31,226 [INFO] ConfigFileManager:1595 - The Die is : DIE433
+2026-08-30 00:40:31,952 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 775mS.
+2026-08-30 00:40:31,953 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-08-30 00:40:31,960 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.

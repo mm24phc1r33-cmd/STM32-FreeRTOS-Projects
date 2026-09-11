@@ -1,0 +1,860 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2026 STMicroelectronics.
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "cmsis_os.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+#include "timers.h"
+
+#include "task_handler.h"
+#include "led_effect.h"
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+/* USER CODE END Includes */
+
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+
+/* Private variables ---------------------------------------------------------*/
+
+RTC_HandleTypeDef hrtc;
+
+UART_HandleTypeDef huart2;
+
+
+/* Definitions for defaultTask */
+/*
+ * Not used because we are using native FreeRTOS API.
+ */
+
+osThreadId_t defaultTaskHandle;
+
+const osThreadAttr_t defaultTask_attributes =
+{
+    .name = "defaultTask",
+    .stack_size = 128 * 4,
+    .priority = (osPriority_t) osPriorityNormal,
+};
+
+
+/* USER CODE BEGIN PV */
+
+/* =========================================================
+ *                    TASK HANDLES
+ * =========================================================
+ */
+
+TaskHandle_t handle_cmd_task;
+TaskHandle_t handle_menu_task;
+TaskHandle_t handle_print_task;
+TaskHandle_t handle_led_task;
+TaskHandle_t handle_rtc_task;
+
+
+/* =========================================================
+ *                    TASK STATUS
+ * =========================================================
+ */
+
+BaseType_t status;
+
+
+/* =========================================================
+ *                    QUEUE HANDLES
+ * =========================================================
+ */
+
+QueueHandle_t q_data;
+QueueHandle_t q_print;
+
+
+/* =========================================================
+ *                    UART DATA
+ * =========================================================
+ *
+ * UART receives one byte at a time.
+ *
+ * =========================================================
+ */
+
+volatile uint8_t user_data;
+
+
+/* =========================================================
+ *                    STATE VARIABLE
+ * =========================================================
+ */
+
+state_t curr_state = sMainMenu;
+
+
+/* =========================================================
+ *                    LED TIMERS
+ * =========================================================
+ *
+ * Timer 0 -> Effect 1
+ * Timer 1 -> Effect 2
+ * Timer 2 -> Effect 3
+ * Timer 3 -> Effect 4
+ *
+ * =========================================================
+ */
+
+TimerHandle_t handle_led_timer[4];
+
+
+/* USER CODE END PV */
+
+
+/* Private function prototypes -----------------------------------------------*/
+
+void SystemClock_Config(void);
+
+static void MX_GPIO_Init(void);
+static void MX_RTC_Init(void);
+static void MX_USART2_UART_Init(void);
+
+void StartDefaultTask(void *argument);
+
+
+/* USER CODE BEGIN PFP */
+
+/*
+ * Task functions are implemented in task_handler.c
+ *
+ * menu_task()
+ * cmd_handler_task()
+ * print_task()
+ * led_task()
+ * rtc_task()
+ *
+ */
+
+
+/* USER CODE END PFP */
+
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+    /* USER CODE BEGIN 1 */
+
+    /* USER CODE END 1 */
+
+
+    /* MCU Configuration--------------------------------------------------------*/
+
+    /*
+     * Reset of all peripherals,
+     * Initializes the Flash interface and the Systick.
+     */
+
+    HAL_Init();
+
+
+    /* USER CODE BEGIN Init */
+
+    /* USER CODE END Init */
+
+
+    /* Configure the system clock */
+
+    SystemClock_Config();
+
+
+    /* USER CODE BEGIN SysInit */
+
+    /* USER CODE END SysInit */
+
+
+    /* Initialize all configured peripherals */
+
+    MX_GPIO_Init();
+
+    MX_RTC_Init();
+
+    MX_USART2_UART_Init();
+
+
+    /* USER CODE BEGIN 2 */
+
+
+    /* =========================================================
+     *                    CREATE QUEUES
+     * =========================================================
+     *
+     * q_data:
+     * Receives individual UART characters.
+     *
+     * q_print:
+     * Receives pointers to strings that must be printed.
+     *
+     * =========================================================
+     */
+
+    q_data = xQueueCreate(
+        10,
+        sizeof(char)
+    );
+
+    configASSERT(q_data != NULL);
+
+
+    q_print = xQueueCreate(
+        10,
+        sizeof(char *)
+    );
+
+    configASSERT(q_print != NULL);
+
+
+    /* =========================================================
+     *                    CREATE TASKS
+     * =========================================================
+     *
+     * IMPORTANT:
+     * Each task is created ONLY ONCE.
+     *
+     * =========================================================
+     */
+
+
+    /* MENU TASK */
+
+    status = xTaskCreate(
+        menu_task,
+        "menu_task",
+        250,
+        NULL,
+        2,
+        &handle_menu_task
+    );
+
+    configASSERT(status == pdPASS);
+
+
+    /* COMMAND HANDLER TASK */
+
+    status = xTaskCreate(
+        cmd_handler_task,
+        "cmd_task",
+        250,
+        NULL,
+        2,
+        &handle_cmd_task
+    );
+
+    configASSERT(status == pdPASS);
+
+
+    /* PRINT TASK */
+
+    status = xTaskCreate(
+        print_task,
+        "print_task",
+        250,
+        NULL,
+        2,
+        &handle_print_task
+    );
+
+    configASSERT(status == pdPASS);
+
+
+    /* LED TASK */
+
+    status = xTaskCreate(
+        led_task,
+        "led_task",
+        250,
+        NULL,
+        2,
+        &handle_led_task
+    );
+
+    configASSERT(status == pdPASS);
+
+
+    /* RTC TASK */
+
+    status = xTaskCreate(
+        rtc_task,
+        "rtc_task",
+        250,
+        NULL,
+        2,
+        &handle_rtc_task
+    );
+
+    configASSERT(status == pdPASS);
+
+
+    /* =========================================================
+     *                  CREATE SOFTWARE TIMERS
+     * =========================================================
+     *
+     * Four timers are created.
+     *
+     * Timer ID:
+     *
+     * 1 -> LED Effect 1
+     * 2 -> LED Effect 2
+     * 3 -> LED Effect 3
+     * 4 -> LED Effect 4
+     *
+     * Timer period = 500 ms
+     * Auto reload = pdTRUE
+     *
+     * =========================================================
+     */
+
+    for (int i = 0; i < 4; i++)
+    {
+        handle_led_timer[i] = xTimerCreate(
+            "LED_TIMER",
+            pdMS_TO_TICKS(500),
+            pdTRUE,
+            (void *)(uintptr_t)(i + 1),
+            led_effect_callback
+        );
+
+        configASSERT(handle_led_timer[i] != NULL);
+    }
+
+
+    /* =========================================================
+     *                  START UART RECEPTION
+     * =========================================================
+     *
+     * UART receives one character at a time.
+     *
+     * When ENTER ('\n') is received,
+     * HAL_UART_RxCpltCallback() notifies cmd_handler_task.
+     *
+     * =========================================================
+     */
+
+    HAL_UART_Receive_IT(
+        &huart2,
+        (uint8_t *)&user_data,
+        1
+    );
+
+
+    /* =========================================================
+     *                  START FREERTOS
+     * =========================================================
+     */
+
+    vTaskStartScheduler();
+
+
+    /*
+     * Scheduler should never return here.
+     */
+
+    /* USER CODE END 2 */
+
+
+    /* Infinite loop */
+
+    while (1)
+    {
+        /*
+         * Should never reach here because
+         * FreeRTOS scheduler is running.
+         */
+    }
+}
+
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+
+    /* Configure the main internal regulator output voltage */
+
+    __HAL_RCC_PWR_CLK_ENABLE();
+
+    __HAL_PWR_VOLTAGESCALING_CONFIG(
+        PWR_REGULATOR_VOLTAGE_SCALE2
+    );
+
+
+    /* =========================================================
+     *                  OSCILLATOR CONFIGURATION
+     * =========================================================
+     */
+
+    RCC_OscInitStruct.OscillatorType =
+        RCC_OSCILLATORTYPE_HSI |
+        RCC_OSCILLATORTYPE_LSI;
+
+    RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+
+    RCC_OscInitStruct.HSICalibrationValue =
+        RCC_HSICALIBRATION_DEFAULT;
+
+    RCC_OscInitStruct.LSIState = RCC_LSI_ON;
+
+    RCC_OscInitStruct.PLL.PLLState =
+        RCC_PLL_NONE;
+
+
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+
+    /* =========================================================
+     *                  CLOCK CONFIGURATION
+     * =========================================================
+     */
+
+    RCC_ClkInitStruct.ClockType =
+        RCC_CLOCKTYPE_HCLK |
+        RCC_CLOCKTYPE_SYSCLK |
+        RCC_CLOCKTYPE_PCLK1 |
+        RCC_CLOCKTYPE_PCLK2;
+
+    RCC_ClkInitStruct.SYSCLKSource =
+        RCC_SYSCLKSOURCE_HSI;
+
+    RCC_ClkInitStruct.AHBCLKDivider =
+        RCC_SYSCLK_DIV1;
+
+    RCC_ClkInitStruct.APB1CLKDivider =
+        RCC_HCLK_DIV1;
+
+    RCC_ClkInitStruct.APB2CLKDivider =
+        RCC_HCLK_DIV1;
+
+
+    if (HAL_RCC_ClockConfig(
+            &RCC_ClkInitStruct,
+            FLASH_LATENCY_0
+        ) != HAL_OK)
+    {
+        Error_Handler();
+    }
+}
+
+
+/**
+  * @brief RTC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_RTC_Init(void)
+{
+    /* USER CODE BEGIN RTC_Init 0 */
+
+    /* USER CODE END RTC_Init 0 */
+
+
+    /* Initialize RTC */
+
+    hrtc.Instance = RTC;
+
+    hrtc.Init.HourFormat =
+        RTC_HOURFORMAT_24;
+
+    hrtc.Init.AsynchPrediv =
+        127;
+
+    hrtc.Init.SynchPrediv =
+        255;
+
+    hrtc.Init.OutPut =
+        RTC_OUTPUT_DISABLE;
+
+    hrtc.Init.OutPutPolarity =
+        RTC_OUTPUT_POLARITY_HIGH;
+
+    hrtc.Init.OutPutType =
+        RTC_OUTPUT_TYPE_OPENDRAIN;
+
+
+    if (HAL_RTC_Init(&hrtc) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+
+    /* USER CODE BEGIN RTC_Init 2 */
+
+    /* USER CODE END RTC_Init 2 */
+}
+
+
+/**
+  * @brief USART2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART2_UART_Init(void)
+{
+    /* USER CODE BEGIN USART2_Init 0 */
+
+    /* USER CODE END USART2_Init 0 */
+
+
+    huart2.Instance = USART2;
+
+    huart2.Init.BaudRate = 115200;
+
+    huart2.Init.WordLength =
+        UART_WORDLENGTH_8B;
+
+    huart2.Init.StopBits =
+        UART_STOPBITS_1;
+
+    huart2.Init.Parity =
+        UART_PARITY_NONE;
+
+    huart2.Init.Mode =
+        UART_MODE_TX_RX;
+
+    huart2.Init.HwFlowCtl =
+        UART_HWCONTROL_NONE;
+
+    huart2.Init.OverSampling =
+        UART_OVERSAMPLING_16;
+
+
+    if (HAL_UART_Init(&huart2) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+
+    /* USER CODE BEGIN USART2_Init 2 */
+
+    /* USER CODE END USART2_Init 2 */
+}
+
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPIO_Init(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+
+    /* USER CODE BEGIN MX_GPIO_Init_1 */
+
+    /* USER CODE END MX_GPIO_Init_1 */
+
+
+    /* =========================================================
+     *                  GPIO CLOCK ENABLE
+     * =========================================================
+     */
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+
+
+    /* =========================================================
+     *                  INITIAL LED STATE
+     * =========================================================
+     *
+     * Initially all LEDs are OFF.
+     *
+     * =========================================================
+     */
+
+    HAL_GPIO_WritePin(
+        GPIOB,
+        LED_GREEN_Pin |
+        LED_ORANGE_Pin |
+        LED_RED_Pin |
+        LED_YELLOW_Pin,
+        GPIO_PIN_RESET
+    );
+
+
+    /* =========================================================
+     *                  LED GPIO CONFIGURATION
+     * =========================================================
+     */
+
+    GPIO_InitStruct.Pin =
+        LED_GREEN_Pin |
+        LED_ORANGE_Pin |
+        LED_RED_Pin |
+        LED_YELLOW_Pin;
+
+    GPIO_InitStruct.Mode =
+        GPIO_MODE_OUTPUT_PP;
+
+    GPIO_InitStruct.Pull =
+        GPIO_NOPULL;
+
+    GPIO_InitStruct.Speed =
+        GPIO_SPEED_FREQ_LOW;
+
+
+    HAL_GPIO_Init(
+        GPIOB,
+        &GPIO_InitStruct
+    );
+
+
+    /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+    /* USER CODE END MX_GPIO_Init_2 */
+}
+
+
+/* =========================================================
+ *                  UART RX CALLBACK
+ * =========================================================
+ *
+ * This function executes in interrupt context.
+ *
+ * Every received UART character is placed into q_data.
+ *
+ * When ENTER is received:
+ *
+ * '\n'
+ *
+ * the command handler task is notified.
+ *
+ * =========================================================
+ */
+
+void HAL_UART_RxCpltCallback(
+    UART_HandleTypeDef *huart
+)
+{
+    uint8_t dummy;
+
+    BaseType_t xHigherPriorityTaskWoken =
+        pdFALSE;
+
+
+    /* Make sure callback is from USART2 */
+
+    if (huart->Instance == USART2)
+    {
+        /* =====================================================
+         *                  QUEUE UART DATA
+         * =====================================================
+         */
+
+        if (!xQueueIsQueueFullFromISR(q_data))
+        {
+            xQueueSendFromISR(
+                q_data,
+                (void *)&user_data,
+                &xHigherPriorityTaskWoken
+            );
+        }
+        else
+        {
+            /*
+             * If queue is full and ENTER arrives,
+             * remove the oldest byte and insert ENTER.
+             */
+
+            if (user_data == '\n')
+            {
+                xQueueReceiveFromISR(
+                    q_data,
+                    (void *)&dummy,
+                    &xHigherPriorityTaskWoken
+                );
+
+                xQueueSendFromISR(
+                    q_data,
+                    (void *)&user_data,
+                    &xHigherPriorityTaskWoken
+                );
+            }
+        }
+
+
+        /* =====================================================
+         *              NOTIFY COMMAND TASK
+         * =====================================================
+         */
+
+        if (user_data == '\n')
+        {
+            xTaskNotifyFromISR(
+                handle_cmd_task,
+                0,
+                eNoAction,
+                &xHigherPriorityTaskWoken
+            );
+        }
+
+
+        /* =====================================================
+         *              RESTART UART RX
+         * =====================================================
+         */
+
+        HAL_UART_Receive_IT(
+            &huart2,
+            (uint8_t *)&user_data,
+            1
+        );
+
+
+        /* =====================================================
+         *          YIELD IF REQUIRED
+         * =====================================================
+         */
+
+        portYIELD_FROM_ISR(
+            xHigherPriorityTaskWoken
+        );
+    }
+}
+
+
+/* =========================================================
+ *                  DEFAULT TASK
+ * =========================================================
+ *
+ * Not used in this native FreeRTOS application.
+ *
+ * =========================================================
+ */
+
+void StartDefaultTask(void *argument)
+{
+    for (;;)
+    {
+        osDelay(1);
+    }
+}
+
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called when TIM5 interrupt
+  *         takes place.
+  */
+void HAL_TIM_PeriodElapsedCallback(
+    TIM_HandleTypeDef *htim
+)
+{
+    /* USER CODE BEGIN Callback 0 */
+
+    /* USER CODE END Callback 0 */
+
+
+    if (htim->Instance == TIM5)
+    {
+        HAL_IncTick();
+    }
+
+
+    /* USER CODE BEGIN Callback 1 */
+
+    /* USER CODE END Callback 1 */
+}
+
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+    /* USER CODE BEGIN Error_Handler_Debug */
+
+    __disable_irq();
+
+    while (1)
+    {
+    }
+
+    /* USER CODE END Error_Handler_Debug */
+}
+
+
+#ifdef USE_FULL_ASSERT
+
+/**
+  * @brief  Reports the name of the source file and the source line
+  *         number where the assert_param error has occurred.
+  */
+void assert_failed(
+    uint8_t *file,
+    uint32_t line
+)
+{
+    /* USER CODE BEGIN 6 */
+
+    /*
+     * User can add implementation here.
+     */
+
+    /* USER CODE END 6 */
+}
+
+#endif /* USE_FULL_ASSERT */
